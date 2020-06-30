@@ -5,7 +5,7 @@ jobs:
         working_directory: ~/circleciTest
         
         docker:
-            - image: circleciTest/node:7
+            - image: circlecitest/node:7
         
         steps:
             - checkout
