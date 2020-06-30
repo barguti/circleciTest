@@ -1,18 +1,15 @@
-version: 2
+version: 2.1
+
 jobs:
-  build:
-    working_directory: ~/circleciTest
-    docker:
-    - image: circlecitest/node:lts-stretch-slim
-    steps:
-    - checkout
-    - run:
-        command: npm install
-    - run:
-        name: paso
-        command: echo 'y sería'
-workflows:
-  version: 2
-  workflow:
-    jobs:
-    - build
+    build:
+        working_directory: ~/circleciTest
+        
+        docker:
+            - image: node:lts-stretch-slim
+        
+        steps:
+            - checkout
+            - run: npm install
+            - run:
+                name: paso
+                command: echo 'y sería'
