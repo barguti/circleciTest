@@ -1,7 +1,7 @@
 version: 2.1
 
 jobs:
-    bluid:
+    build:
         working_directory: ~/tmp
         
         docker:
