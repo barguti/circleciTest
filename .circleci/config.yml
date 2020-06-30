@@ -5,7 +5,7 @@ jobs:
         working_directory: ~/circleciTest
         
         docker:
-            - image: circlecitest/node:7
+            - image: circlecitest/node:lts-stretch-slim
         
         steps:
             - checkout
